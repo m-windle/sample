@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="lightslider.js"></script>
+    <link type="text/css" rel="stylesheet" href="lightslider.css" />
+    <link type="text/css" rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+    <div class="flex flexCenter flexVertical" style="width: 100%;">
+        <div id="buttonContainer" class="flex flexJustCenter">
+            <a id="step1" href="#">Step 1</a>
+            <span>&emsp; &#10143; &emsp;</span>
+            <a id="step2" href="#">Step 2</a>
+            <span>&emsp; &#10143; &emsp;</span>
+            <a id="step3" href="#">Step 3</a>
+        </div>
+        <div id="sliderContainer">
+            <ul id="lightSlider">
+                <li>
+                    <h3>First Step</h3>
+                    <p>Here you would select your colour of your frame, size of your frame, and if it's frameset or complete.<br><br>
+                    If it's frameset only, the next step button would be just add to cart and would skip the rest of the process<br>
+                    If they select complete bike, only once all the options (colour, size, complete/frameset) are selected will the "next step" button be available<br>
+                    They also won't be able to go to next steps through the links above until they select all required options in the previous step</p>
+                    <div class="stepControls">
+                        <button class="prevStep" hidden>Prev Step</button>
+                        <button class="nextStep">Next Step</button>
+                    </div>
+                </li>
+                <li>
+                    <h3>Second Step</h3>
+                    <p>Here they would select groupset, crankset, and cassette options.<br>
+                    Again, if not all options are selected, they cannot go to the next step and the button will be disabled until they do</p>
+                    <div class="stepControls">
+                        <button class="prevStep">Prev Step</button>
+                        <button class="nextStep">Next Step</button>
+                    </div>
+                </li>
+                <li>
+                    <h3>Third Step</h3>
+                    <p>Here they will select handlebar and stem options<br>
+                    If this were the last step (which it's not, it's just an example) they could add it to the cart now</p>
+                    <div class="stepControls">
+                        <button class="prevStep">Prev Step</button>
+                        <button>Add to Cart</button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="index.js" type="text/javascript"></script>
+</body>
+
+</html>

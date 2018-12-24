@@ -1,0 +1,30 @@
+.flex {
+    display: flex;
+}
+
+.flexCenter { 
+    justify-content: center;
+}
+
+.flexVertical { 
+    flex-direction: column;
+}
+
+.flexJustify {
+    justify-content: space-around;
+}
+
+.stepControls {
+    display: flex;
+    justify-content: space-between;
+}
+
+#sliderContainer {
+    align-self: center; 
+    width:75%; 
+}
+
+#buttonContainer {
+    align-self: center;
+    width: 75%;
+}
